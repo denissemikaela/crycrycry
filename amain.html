@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>For Jazcee</title>
+    <link rel="stylesheet" href="amain.css">
+
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .popup {
+            background-color: #081b29;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            color: white;
+            border: 2px solid #00abf0;
+        }
+
+        button {
+    margin: 15px 20px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+button:hover {
+    color: #00abf0;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover::before {
+    width: 100%;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2 style="color: #00abf0;">Welcome to your website, mahal ko!</h2><br>
+            <p>I started creating this website on our 3rd monthsary, March 22, 2024, as a way to show my effort
+                because now that we are not often mag kasama, I feel like I'm not doing enough as your partner.
+                I don't know how long it will take me to be completely done with this, pero sanaaaa  
+                maappreciate yung hard work, time, effort, mga luha at stress sa mga errors in this. I love you always, Jazcee, always.<br><br>
+                NOTE: syempre masaya na naman ako nito HSUAHUAHA I'm sure kasi na ako pa lang nakakagawa nan sa'yo :p
+                kung ako sa'yo ikeep mo na ko, mahalin nang sobra, at 'wag na pakawalan (huyyy desisyon) ganan magmahal ng poging IT student, boss. ENJOY!!
+            </p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <div class="hero">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="bg-overlay"></div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">denisse.</a>
+
+        <nav class="navbar">
+            <a href="index.html" style="color: #00abf0;">Home</a>
+            <a href="letters.html">Letters</a>
+            <a href="readwhen.html">Read When</a>
+            <a href="harana.html">Harana</a>
+            <a href="something.html">Something</a>
+        </nav>
+    </header>
+</div>
+    
+<div class="home">
+    <div class="home-content">
+        <h1>My Dearest, Jazcee,</h1>
+        <p>even if we don't end up together, even if our future is uncertain,<br>regardless of the outcome, you will always have me.</p>
+        <div class="btn-box">
+            <a href="https://open.spotify.com/playlist/1tdyvth9sx8UpnsI8vJHbS?si=c2d10cd0cb82498b&pt=5b34cfe7c7c0066991292e6dd7bc2161">PLAYLIST</a>
+            <a href="abtme.html">ABOUT ME</a>
+        </div>
+        <h4>by denissepogi</h4>
+    </div>
+</div>
+       
+    
+</body>
+</html>
