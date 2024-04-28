@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Jazcee</title>
+    <link rel="stylesheet" href="abtme.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #popupMessage {
+            background-color: #081b29;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            color: white;
+            border: 2px solid #00abf0;
+        }
+
+        button {
+    margin: 15px 20px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+button:hover {
+    color: #00abf0;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover::before {
+    width: 100%;
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">denisse.</a>
+
+        <nav class="navbar">
+            <a href="amain.html">Home</a>
+            <a href="letters.html">Letters</a>
+            <a href="readwhen.html">Read When</a>
+            <a href="harana.html">Harana</a>
+            <a href="something.html">Something</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>I'm Mikaela Denisse</h1>
+            <h3>Nagpababy nung First Meet</h3>
+            <p>You may know me, or you may not, but one thing I'm sure of is that I want to get to know you more. If you feel the same, feel free to ask me questions.. and what else.. how about spending the rest of your life with me?</p>
+
+            <div class="btn-box">
+                <a href="#" onclick="showPopup('popupOverlay1')">INTERESTED?</a>
+                <a href="#" onclick="showPopup('popupOverlay2')">I LOVE YOU</a>
+            </div>
+        </div>
+
+        <div class="overlay" id="popupOverlay1">
+            <div id="popupMessage">
+                <h2 style="color: #00abf0;">edi sabihin mong mahal mo ko tsh..</h2>
+                <h3 style="color: white;">pleaseeee, love love koooo, say Iloveyou na to me oh :[</h3>
+                <button onclick="closePopup('popupOverlay1')">Close</button>
+            </div>
+        </div>
+
+        <div class="overlay" id="popupOverlay2">
+            <div id="popupMessage">
+                <h2 style="color: #00abf0;">I love you most, mahal ko ^___^</h2>
+                <h3 style="color: white;">sobra sobra pa sa inaakala mo,, sobrang sobra.</h3>
+                <button onclick="closePopup('popupOverlay2')">Close</button>
+            </div>
+        </div>
+    
+        <script>
+            function showPopup(popupId) {
+                document.getElementById(popupId).style.display = 'flex';
+            }
+
+            function closePopup(popupId) {
+                document.getElementById(popupId).style.display = 'none';
+            }
+        </script>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/denissemikaela"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/mk.dnx/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.tiktok.com/@arch.ensui"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+    </section>
+
+    <div class="scroll-bg">
+        <div class="scroll-div">
+            <div class="scroll-object">
+                <h1>how u make me act like this</h1><br>
+                <h3>dis may not be a big deal for you but it is for me T---T</h3><br>
+                
+                alam mo, love, nung unang yakap mo sakin, sobrang sarap sa pakiramdam. hindi ko akalaing hahanap hanapin ko yon at mamimiss maya't maya
+                <br><br>
+                lahat ng hug natin was so magical, broooo.. kasi how do i describe this,, para akong nakahinga nang maluwag, everything felt so safe, nakalimutan ko yung mga worries ko, at sa mga sandaling oras na yon, ayoko na kumawala. pakiramdam ko humihinto ang mundo tuwing kayakap kita.
+                <br><br>
+                lahat ng first time na naranasan ko sayo sobrang unexpected 
+                <br><br>
+                like yung first time natin magcuddle kilig na kilig ako, broooo jusq.. I legitimately had butterflies in my stomach..
+                yung first kiss ko sa pisngi mo, u don't know kung gaano kalaki yung ngiti ko habang pauwi hauahuaahha it was so hard pigilan.
+                yung paghehele ko sa'yo, i love it kapag ganon ka kalapit sa'kin,, that feeling na.. sobrang gaan ng lahat.
+                and that first kiss??? hanggang ngayon nagfflashback pa rin sa'kin, I'm so kilig T---T
+                that first date of us as officially gfs!! ang saya saya ko nonnn WTHHHH pakiramdam ko non miss na miss kita at gusto ko na lang yumakap sa'yo habang nagdadrive ka. ayokong mawala sa tabi mo.
+                and the way you look at me??? tsh I'd hate to see you look at someone else like that, dapat sa'kin lang ganon hmp 
+                kay sarap mong ipagdamot
+                <br><br>
+                ...
+                remember nung after natin mag bingo? tayo lang naiwan sa bahay niyo tapos nakahiga lang tayo don nakatingin sa isa't isa hahahhahaha ang saya saya ng puso ko kahit ganon lang ginagawa natin.
+                <br><br>
+                how abt yung nagluto tayo ng pancit canton tapos hinahug kita hsuahauahah cute bakit ba
+                <br><br>
+                ta's nung sabay din tayo nagtoothbrush.. parang nagka 1 day trial card ako as your asawa eh
+                <br><br>
+                and nung first time natin magperya.. the way na you're trying to indirectly hold my hand bruhhhh I wanna hold it so badddd T---T
+                <br><br>
+                and nung pumunta ko ng sv before kami umuwi ng NE.. yung hug mo non, bro.. iba yung higpit tsh nakakakilig T---T yun yung lagi kong iniisip pag namimiss kita eh hahahhahaha
+                <br><br>
+                I'm sure hindi mo na maalala yung iba dito pero tandang tanda ko pa lahat yan. mahal na mahal kita eh. I may be makakalimutin most of the time pero for some reason, may mga bagay na nagsstay sa'kin at patuloy na nagfflashback hsuahauaha maybe bcoz that's when I was genuinely happy kaya kinekeep ng brain ko??
+                <br><br>
+                ...
+                I've always loved how we used to walk at nights, or walk together, generally. alam mo yung kumakalma na ko sa paglalakad mag isa pero may mas ikakalma pa pala pag kasama kita. kaya 50/50 ako sa ebike eh hauahaha gusto kong nasusundo kita pero pag hinahatid naman kita, feel ko ambilis lang ng oras natin magkasama. dito ka na lang kasi sa tabi ko lagi pls..
+                <br><br>
+                I've always loved how you bigla bigla na lang sumusulpot sa'kin or how you surprise me na bigla na lang nandito ka. yung sinundan mo ko ta's bigla ka na lang nagsalita? T---T I rlly thought na I was hearing things pero I'm rlly glad na nandon ka. nawala lahat ng iniisip ko that time hsuahahhaha, I just wanted to enjoy that moment with you. then, nung
+                una mo ring punta sa bahay namin hauahaaha nagagalit pa pag 'di sinabi yung blk and lot hays. hanggang sa nasanay na lang ako na nandyan ka palagi,, na darating ka,, then, you started to stop doing it. I found myself waiting for you to come when I need you, when I miss you. I found myself hoping that you'll call me and say you're outside my house, but you didn't.
+                <br><br>
+                ...
+                I've hated the way I made you wait for me sometimes kasi alam na kita eh, maikli pasensya + madali mainip, pero YOU still doing that makes me feel so fucking special, brooo.. like ganon pala yung feeling na hindi ako palagi yung nageeffort, na someone is willing to wait for me para lang magkasama kami. ganon pala yung feeling ng worth the wait? huyyy hahahhahaha
+                <br><br>
+                I've always hated my first name bcoz I think it's so panget.. pero ba't pag ikaw nagsasabi, biglang gumaganda???
+                <br><br>
+                the way na sinusundo / hinahatid mo ko kahit late na or may online class ka pa T---T
+                <br><br>
+                the way na sumasama ka sa mga school related activities ko such as pag gawa ng mural and Christmas party, tsh ang saya saya ko kasi feel ko gustong gusto mo ko kasama lagi hauahauahah
+                <br><br>
+                the way na pumapayag kang maglakad tayo kahit malayo and kahit ayaw na ayaw mong naglalakad..
+                <br><br>
+                the way na minsan mo lang ako sabihan ng pogi pero grabe yung impact sakin hauhahahahha..
+                <br><br>
+                the way na nagagalit ka pag 'di ako kumakain at gusto mo pa kong orderan tsh magastos..
+                <br><br>
+                ughh and nung tinadtad mo ko ng kiss hauhahahaha ang cute cute mo
+                <br><br>
+                kakaiba ka magmahal, bro, ang sarap sarap sa pakiramdam. pinaramdam mo sa'kin yung tunay na pagmamahal,, that love can make me feel so secure, warm, safe, calm..
+                <br><br>
+                tsh 'di naman talaga ko naniniwala sa forever eh. I just somehow found myself wishing that forever exists bcoz I found you. my heart desires to spend an endless forever by your side.
+                I never want to lose you, ever. my heart belongs to you, mahal ko, now and always.
+                <h1>...</h1>
+                <h1>post-breakup</h1><br>
+                <h3>NOTE: everything i want to say</h3><br>
+                we may have broken up now but i’ll never forget how at peace i was when it was just us laying together and i could hear your heartbeat.
+                <br><br>
+                i hope my absence brings you the peace that my love couldn't.
+                <br><br>
+                does your heart feel lighter now that i'm not there?
+                <br><br>
+                if you had the chance to start over, would you still choose me?
+                <br><br>
+                when did you stop loving me?
+                <br><br>
+                i am not a firm believer of God, but when i lost you, i found myself one night gasping for air from crying so hard that i couldn't breathe,, begging God to make you stay, to help us fix the problem, to help us fix our mistakes, and to help us become better for each other.
+                <br><br>
+                ang ikli ng panahon na binigay sa'tin. kung pwede lang ibalik sa dati lahat at ayusin o itama, gagawin ko, 'wag lang tayo umabot sa ganito. mahal kita eh, sobra. 'wag mo na ko iwan ulit, pls. let's make this another chance worth the fight.
+                <br><br>
+                it's been 9 days and countless times of thinking about what i should do to move on, but nothing seems to be the right answer. i still want u, Jazcee. i want u back. so pls,, let's try again and do it right this time. pls come back.
+                <br><br>
+                magagalit siguro yung dating ikaw kapag nalaman niya na madalas na ko umiyak sa gabi dahil sa relasyon natin
+                <br><br>
+                i never wanted to accept when you wanted to breakup with me that day. i just wanted to know if you're scared of losing me too.
+                <br><br>
+
+            </div>
+        </div>
+    
+</body>
+</html>

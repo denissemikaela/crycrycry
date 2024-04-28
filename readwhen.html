@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>For Jazcee</title>
+    <link rel="stylesheet" href="readwhen.css">
+
+    <style>
+      .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #popupMessage {
+            background-color: #081b29;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            color: white;
+            border: 2px solid #00abf0;
+        }
+
+        button {
+    margin: 15px 20px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+button:hover {
+    color: #00abf0;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+button:hover::before {
+    width: 100%;
+
+}
+
+  </style>
+
+</head>
+<body>
+    <div class="banner">
+        <header class="header">
+            <a href="#" class="logo">denisse.</a>
+
+            <nav class="navbar">
+               <a href="amain.html">Home</a>
+               <a href="letters.html">Letters</a>
+               <a href="readwhen.html" style="color: #00abf0;" >Read When</a>
+               <a href="harana.html">Harana</a>
+               <a href="something.html">Something</a>
+            </nav>
+        </header>
+
+      <div class="wrapper">
+            <div class="box">
+              <h2 style="color: white;">read when..</h2>
+              <h2>you need to know someone cares</h2>
+              <div class="container">
+                <button onclick="showPopup('popupOverlay1')">I LOVE YOU</button>
+              </div>
+        <div class="overlay" id="popupOverlay1">
+            <div id="popupMessage">
+                <h2 style="color: #00abf0;">ONGOING..</h2>
+                <h3 style="color: white;">syempre ako palaging may care sa'yoooooo. <br>I love you so much, babyyyyyyyyy sobraaaaaaa. <br>ayokong mawala ikaw hmm? ayoko please, love. <br>sobrang nalulungkot na ko baby <br>hala ka walang konek sa title, <br>'di pa to final hahahahahah <br>i love youuuuuuuu</h3>
+                <div class="container">
+                <button onclick="closePopup('popupOverlay1')">Close</button>
+                </div>
+        </div>
+
+    
+
+    <script>
+      function showPopup(popupId) {
+          document.getElementById(popupId).style.display = 'flex';
+      }
+
+      function closePopup(popupId) {
+          document.getElementById(popupId).style.display = 'none';
+      }
+  </script>
+
+</body>
+</html>
